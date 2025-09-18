@@ -1,0 +1,30 @@
+{
+  "cmake.generator": "Unix Makefiles",
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "cmake.sourceDirectory": "${workspaceFolder}",
+  "cmake.configureOnOpen": true,
+  "cmake.buildBeforeRun": true,
+
+  // Prefer CMake Tools for C/C++ builds
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+
+  // Disable Code Runner for C/C++ to avoid single-file gcc builds
+  "code-runner.executorMap": {
+    "c": "",
+    "cpp": ""
+  },
+  "code-runner.ignoreSelection": true,
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMapByFileExtension": {
+    ".c": ""
+  },
+  "code-runner.clearPreviousOutput": true,
+
+  // Terminal working dir
+  "terminal.integrated.cwd": "${workspaceFolder}",
+
+  // Problem matcher assumes GCC/Clang style
+  "C_Cpp.errorSquiggles": "Enabled",
+  "C_Cpp.intelliSenseEngine": "Default"
+}
+
